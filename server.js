@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/v1/test", require("./routes/testRoute"));
+app.use("/api/v1/auth", require("./routes/authRoute"));
 
 app.listen(port, hostname, () => {
   // eslint-disable-next-line no-console
