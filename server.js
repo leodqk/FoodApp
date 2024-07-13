@@ -25,8 +25,8 @@ app.get("/", (req, res) => {
   res.end("<h1>Hello World!</h1><hr>");
 });
 
-app.use("/api/v1/test", require("./routes/testRoute"));
 app.use("/api/v1/auth", require("./routes/authRoute"));
+app.use("/api/v1/user", require("./routes/userRoute"));
 
 app.listen(port, hostname, () => {
   // eslint-disable-next-line no-console
